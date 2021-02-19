@@ -1,0 +1,9 @@
+<div class="col-sm-8">
+  <div class="row">
+    {{#each this.services.currentCart as |stock|}}
+        <div class="card mb-4">
+          <CartItem @image={{stock.image}} @title={{stock.title}} @description={{stock.description}} @item={{stock}}/>
+        </div>
+    {{/each}}
+  </div>
+</div>

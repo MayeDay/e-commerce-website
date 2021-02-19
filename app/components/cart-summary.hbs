@@ -1,0 +1,17 @@
+<div class="col-4">
+  <div class="list-group catagories border">
+    <div class="p-4 mb-3 border-bottom">
+      <h5>Cart Summary</h5>
+    </div>
+    {{#each this.services.currentCart as |item|}}
+    <div class="px-4 py-1">
+      <span>{{item.title}}</span>
+      <span> x{{item.amount}}</span>
+      <hr>
+    </div>
+    {{/each}}
+    <div>
+      <label for="">{{totalPrice}}</label>
+    </div>
+  </div>
+</div>

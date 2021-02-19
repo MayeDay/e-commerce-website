@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row border m-3 bg-light">
+    <div class="col-12">
+      <BsForm @formLayout="horizontal" as |form|>
+        <div class="row">
+          <div class="col-6 pt-2 border">
+            <label for="" class="border-bottom pb-3">Shipping Address</label>
+            <form.element @controlType="text" @label="City" @placeholder="City" @property="city" />
+            <form.element @controlType="text" @label="Street" @placeholder="Street" @property="street" />
+            <form.element @controlType="text" @label="State" @placeholder="State" @property="state" />
+            <form.element @controlType="text" @label="Zip" @placeholder="Zipcode" @property="zipcode" />
+          </div>
+
+          <div class="col-6 pt-2 border">
+          <label for="" class="border-bottom pb-3">Billing Address</label> 
+            <form.element @controlType="text" @label="City" @placeholder="City" @property="city billing" />
+            <form.element @controlType="text" @label="Street" @placeholder="Street" @property="street billing" />
+            <form.element @controlType="text" @label="State" @placeholder="State" @property="state billing" />
+            <form.element @controlType="text" @label="Zip" @placeholder="Zipcode" @property="zipcode billing" />
+          </div>
+
+          <div class="col-12 pt-2 p-3">
+            <label for="" class="border-bottom pb-3">Card Information</label> 
+            <form.element @controlType="text" @label="Card Number" @placeholder="Card" @property="card number" />
+            <form.element @controlType="text" @label="Exp. Date" @placeholder="date" @property="date" />
+            <form.element @controlType="text" @label="Security Code" @placeholder="Security" @property="security code" />
+            <form.element @controlType="text" @label="Full Name on Card" @placeholder="Name" @property="name" />
+            <form.submitButton class="float-right" @onClick= {{action "checkout"}}>Checkout</form.submitButton>
+          </div>
+        </div>
+      </BsForm>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,26 @@
+<<<<<<< HEAD
+image: node:4.2.2
+
+pages:
+  script:
+  - echo 'nothing to do'
+  artifacts:
+    paths:
+    - public
+  only:
+  - pages
+=======
+# This file is a template, and might need editing before it works on your project.
+# Full project: https://gitlab.com/pages/plain-html
+pages:
+  stage: deploy
+  script:
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+>>>>>>> 63a551c27d139e514176090106b54151b644b455

@@ -1,0 +1,15 @@
+.card {
+  margin: auto;
+  
+}
+
+.card-img-top {
+  height: 8.3rem;
+}
+
+.header {
+  background-image: url("https://wallpaperaccess.com/full/2593042.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

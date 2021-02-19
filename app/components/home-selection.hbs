@@ -1,0 +1,9 @@
+<div class="col-4">
+  <div class="list-group catagories">
+    {{#each this.catagoriesList as |item|}}
+      <BsButton class="list-group-item list-group-item-action" @onClick= {{action "getItems" item}}>{{item}}</BsButton>
+    {{/each}}
+  </div>
+</div>
+
+{{yield}}

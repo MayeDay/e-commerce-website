@@ -1,0 +1,11 @@
+<div class="col-sm-8">
+  <div class="row">
+    {{#each this.services.current as |stock|}}
+      <div class="col-sm-4">
+        <div class="card mb-4">
+          <StockItem @image={{stock.image}} @title={{stock.title}} @description={{stock.description}} @price={{stock.price}} @item={{stock}}/>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
